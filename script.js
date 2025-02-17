@@ -17,7 +17,7 @@ let dataArray;
     }
 
     // If sound exceeds a certain threshold, blow out candles
-    if (total > 3000) {
+    if (total > 50) {
         blowOutCandles();
     }
 
