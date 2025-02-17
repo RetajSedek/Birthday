@@ -16,6 +16,13 @@ body {
     margin: 5px;
     display: inline-block;
     position: relative;
+  .blown-out {
+    background-color: #333 !important; /* Make candle darker */
+}
+
+.blown-out::after {
+    display: none !important; /* Hide flame */
+}  
 }
 
 .candle::after {
