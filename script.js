@@ -8,11 +8,10 @@ let bufferLength;
 let dataArray;
 
 // Function to detect blow
-function detectBlow() {
+    function detectBlow() {
     analyser.getByteFrequencyData(dataArray);
     let total = 0;
 
-    // Calculate the total sound energy
     for (let i = 0; i < bufferLength; i++) {
         total += dataArray[i];
     }
@@ -21,6 +20,9 @@ function detectBlow() {
     if (total > 3000) {
         blowOutCandles();
     }
+
+    // Keep checking for blowing
+    requestAnimationFrame(detectBlow);
 }
 
 // Blow out candles
