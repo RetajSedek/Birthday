@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Cake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="birthday-cake">
+        <!-- 17 candles -->
+        <div class="candle" id="candle1"></div>
+        <div class="candle" id="candle2"></div>
+        <div class="candle" id="candle3"></div>
+        <div class="candle" id="candle4"></div>
+        <div class="candle" id="candle5"></div>
+        <div class="candle" id="candle6"></div>
+        <div class="candle" id="candle7"></div>
+        <div class="candle" id="candle8"></div>
+        <div class="candle" id="candle9"></div>
+        <div class="candle" id="candle10"></div>
+        <div class="candle" id="candle11"></div>
+        <div class="candle" id="candle12"></div>
+        <div class="candle" id="candle13"></div>
+        <div class="candle" id="candle14"></div>
+        <div class="candle" id="candle15"></div>
+        <div class="candle" id="candle16"></div>
+        <div class="candle" id="candle17"></div>
+    </div>
+    <audio id="happy-birthday-song" autoplay>
+        <source src="happy-birthday.mp3" type="audio/mp3">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>

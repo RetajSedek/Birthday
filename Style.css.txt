@@ -1,0 +1,41 @@
+body {
+    background-color: #0099FF; /* Blue background */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#birthday-cake {
+    margin-top: 50px;
+    position: relative;
+}
+
+.candle {
+    width: 20px;
+    height: 50px;
+    background-color: #FFD700; /* Candle color */
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.candle::after {
+    content: '';
+    width: 6px;
+    height: 12px;
+    background-color: #FF6347; /* Flame color */
+    position: absolute;
+    top: -15px;
+    left: 7px;
+    border-radius: 50%;
+    display: block;
+}
+
+#birthday-cake {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+audio {
+    display: none; /* Hide audio player */
+}
